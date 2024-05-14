@@ -1,0 +1,120 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+@layer base {
+    html {
+        font-family: 'Cairo', sans-serif;
+    }
+
+    h1 {
+        @apply text-3xl;
+    }
+
+    h2 {
+        @apply text-2xl;
+    }
+
+    h3 {
+        @apply text-xl;
+    }
+}
+
+.my-container {
+    padding: 0 1rem;
+    margin: auto;
+}
+
+.onHoverChangeCol {
+    color: black;
+}
+
+.onHoverChangeCol:hover {
+    color: lightgray;
+}
+
+.header-container {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hItem {
+    height: 100%;
+    padding: 0 10px;
+}
+
+.hText {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.icon {
+    vertical-align: middle;
+}
+
+.group {
+    display: inline-block;
+    justify-content: space-around;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.company {
+    display: flex;
+    justify-content: start;
+    padding: 0.2rem 0;
+}
+
+.tbl-row {
+    flex-basis: 9rem;
+    font-size: 1rem;
+    padding-right: 0.1rem;
+}
+
+.tbl-head {
+    font-weight: bold;
+}
+
+.tbl-content {
+    font-size: 1rem;
+}
+
+.btnTxt {
+    background-color: darkgray;
+    flex-basis: 5rem;
+    margin-left: 0.5rem;
+    text-align: center;
+    border-radius: 0.2em;
+}
+
+.headTxt {
+    flex-basis: 5rem;
+}
+
+.navbar a {
+    color: darkblue;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: cornflowerblue;
+}
+
+.navbar .nav {
+    justify-content: flex-end;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar li {
+    margin-left: 1.5rem;
+}

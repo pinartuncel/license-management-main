@@ -1,0 +1,21 @@
+version: '3.3'
+services:
+  db:
+    image: mysql:latest
+    command: --default-authentication-plugin=mysql_native_password
+    environment:
+      MYSQL_DATABASE: license-management
+      MYSQL_USER: user
+      MYSQL_PASSWORD: password
+      MYSQL_ROOT_PASSWORD: password
+    ports:
+      - '3306:3306'
+    expose:
+      - '3306'
+    volumes:
+      - ./volumes/mysql:/var/lib/mysql
+
+  adminer:
+    image: adminer
+    ports:
+      - '8090:8080' #Port außerhalb:Port innerhalb

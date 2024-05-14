@@ -1,0 +1,24 @@
+POST	/login      -> login user and create JWT token
+
+GET		/user		-> Get all users
+POST	/user		-> Create new user
+DELETE	/user/{id} 	-> Delete user with id
+PUT		/user/{id}	-> Update user with id
+GET		/user/{id}	-> Get user with id
+
+GET		/user?company={id}	-> Get all users where in company
+GET		/user?contract={id}	-> Get all users where in contract
+
+
+GET		/company		-> Get all companies
+POST	/company		-> Create new company
+DELETE	/company/{id}	-> Delete company with id
+PUT		/company/{id}	-> Update company with id
+GET		/company/{id}	-> Get company with id
+
+GET		/contract		-> Get all contracts
+POST	/contract		-> Create new contract
+DELETE	/contract/{id}	-> Delete contract with id
+PUT		/contract/{id}	-> Update contract with id
+GET		/contract/{id}	-> Get contract with id
+
